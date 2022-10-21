@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+.recipe {
+    cursor: pointer
+}
+
+.img-container {
+    height: 170px;
+}
+
+img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe .recipe-name {
+    font-size: 1.12rem;
+}
+
+input {
+    background-color: white !important;
+}
+
+input:focus {
+    border: 2px solid #d49341 !important;
+    outline: none;
+}
+
+button {
+    background-color: #d49341 !important;
+    border: 0 !important;
+    color: white !important;
+    height: 100%;
+}
+
+.recipe-popup{
+    background-color:rgba(0, 0, 0, 0.249);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: block;
+    z-index: 2;
+    padding: 20px;
+    top:0;
+    left:0;
+    right: 0;
+}
+
+.recipe-popup .content .text-block{
+    overflow-y:auto;
+    height: 300px;
+}
+
+.recipe-popup .img-cover {
+    background-size: cover;
+    height: 300px;   
+}
+
+.recipe-popup .meal-recipe{
+    font-size:0.85rem
+}
+
+.recipe-popup .recipe-link{
+    font-size:0.8rem;
+    color:#d49341;
+}
+
+.recipe-popup .close-popup{
+    color:red;
+    background-color: white;
+    font-size:1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
